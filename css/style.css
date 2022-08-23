@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
 :root{
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
@@ -7,10 +9,9 @@
 }
 
 body{
-    margin: 0;
-    padding: 0;
     line-height: 1.5;
     font-size: 16px;
+    font-family: 'Poppins'sans-serif;
 }
 
 *{
@@ -23,6 +24,10 @@ body{
 
 ::before, ::after{
     box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
 }
 
 .section{
@@ -44,6 +49,26 @@ body{
     position: fixed;
     left: 0;
     top: 0;
+    padding: 30px;
     height: 100%;
     z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside .logo{
+    position: absolute;
+    top: 50px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.aside .logo a{
+    color: var(--text-black-900);
+    font-weight: 700;
+    background: red;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
 }
