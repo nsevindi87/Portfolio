@@ -5,7 +5,7 @@
     --bg-black-100: #fdf9ff;
     --bg-black-50:#e8dfec;
     --text-black-900: #302e4d;
-    --text-black-900: #504e70;
+    --text-black-700: #504e70;
 }
 
 body{
@@ -34,13 +34,12 @@ ul{
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    position: fixed;
-    left: 270px;
     padding: 0 30px;
-    top: 0;
-    right: 0;
-    z-index: 0;
     opacity: 1;
+}
+
+.main-content{
+    padding-left: 270px;
 }
 
 .padd-15{
@@ -67,7 +66,16 @@ ul{
     font-weight: 500;
     padding: 12px 35px;
     color: white;
+    border-radius: 40px;
+    display: inline-block;
+    white-space: nowrap;
+    border: none;
     background: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.05);
 }
 
 /* --------------aside-------------- */
@@ -209,16 +217,6 @@ ul{
     max-width: 60%;
 }
 
-.home .home-img{
-    flex: 0 0 40%;
-    max-width: 40%;
-    text-align: center;
-    position: relative;
-}
-.home .home-img img{
-    height: 400px;
-}
-
 h3.hello{
     font-size: 28px;
     margin: 15px 0;
@@ -243,5 +241,40 @@ h3.my-profession{
 .home-info p{
     margin-bottom: 70px;
     font-size: 20px;
-    color: var(--text-black-900);
+    color: var(--text-black-700);
+}
+
+.home .home-img{
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.home-img::after{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    bottom: -40px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+}
+
+.home-img::before{
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: -20px;
+    top: -40px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+}
+
+.home .home-img img{
+    height: 400px;
+    margin: auto;
+    border-radius: 5px;
 }
