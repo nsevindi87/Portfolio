@@ -519,3 +519,17 @@ h3.my-profession{
     text-align: justify;
     color: var(--text-black-700);
 }
+
+/* Service */
+.service .service-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.22%;
+    max-width: 33.33%;
+}
+
+.service .service-item .servicee-item-inner{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+}
