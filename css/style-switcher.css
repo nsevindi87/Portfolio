@@ -12,6 +12,10 @@
     transform: translateX(100%);
 }
 
+.style-switcher.open{
+    transform:  translateX(-25px);
+}
+
 .style-switcher .s-icon{
     position: absolute;
     height: 40px;
@@ -30,6 +34,7 @@
 
 .style-switcher .s-icon i{
     line-height: 40px;
+    transform: rotate(360deg);
 }
 
 .style-switcher .style-switcher-toggler{
